@@ -11,7 +11,7 @@ const Signup = () => {
 
     const submitHandler = async ()=>{
         try {
-            const response = await axios.post(`http://localhost:4000/api/v1/user/register`,{name,email,password})
+            const response = await axios.post(`https://form-eight-rust.vercel.app/api/v1/user/register`,{name,email,password})
             const result = response.data
             if(result.success){
                 toast.success(result.message)
