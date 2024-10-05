@@ -21,8 +21,7 @@ app.use('/api/v1/user',userRoute)
 
 
 app.get("/", (req, res) => { 
-    app.use(express.static(path.resolve(__dirname, "frontend", "dist"))); 
-    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html")); 
+      res.send({message:'hello world'}) 
   }); 
 
 
